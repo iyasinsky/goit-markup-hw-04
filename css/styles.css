@@ -53,6 +53,10 @@ img {
   height: auto;
 }
 
+.flexible {
+  display: flex;
+}
+
 /* Візуально ховає заголовки */
 .visually-hidden {
   position: absolute;
@@ -224,15 +228,11 @@ img {
 
 /* Our features section*/
 .features-list {
-  display: flex;
-}
-
-.features-list-item {
   width: 270px;
   margin-right: 30px;
 }
 
-.features-list-item:last-child {
+.features-list:last-child {
   margin-right: 0;
 }
 
@@ -253,6 +253,22 @@ img {
   margin: 0;
 }
 
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-icon-list {
+  background-color: var(--secondary-color);
+  width: 270px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.features-icon-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* What are we doing & our team title sections*/
 .secondary-title {
   color: var(--secondary-text-color);
@@ -262,11 +278,6 @@ img {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
-}
-
-.work,
-.team-list {
-  display: flex;
 }
 
 .work-item:not(:last-child) {
