@@ -126,6 +126,11 @@ img {
   padding-bottom: 32px;
 }
 
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -251,11 +256,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0;
-}
-
-.features-icon {
-  width: 70px;
-  height: 70px;
 }
 
 .features-icon-list {
