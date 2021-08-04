@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #ffffff;
+  --primary-color: #fff;
   --secondary-color: #f5f4fa;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --hero-bg: #c4c4c4;
   --accent: #2196f3;
   --button-bgc: #188ce8;
-  --logo-color: #000000;
+  --logo-color: #000;
   --footer-color: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --header-line: #ececec;
-  --border-line: #eeeeee;
-  --socials: #afb1b8;
+  --border-line: #eee;
+  --link-color: #afb1b8;
 }
 
 body {
@@ -276,7 +276,7 @@ img {
   margin-right: 30px;
 }
 
-/* What are we doing & our team title sections*/
+/* What we do & team sections*/
 .secondary-title {
   color: var(--secondary-text-color);
   font-size: 36px;
@@ -345,18 +345,35 @@ img {
 
 .socials-link {
   display: flex;
-  color: var(--socials);
+  fill: var(--link-color);
   padding: 12px;
   border-radius: 50%;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--accent);
-  color: #fff;
+  fill: var(--primary-color);
 }
 
-.socials-icon {
-  fill: currentColor;
+/* Clients section */
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  padding: 16px 32px;
+  fill: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Footer section*/
