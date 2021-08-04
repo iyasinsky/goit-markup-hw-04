@@ -11,6 +11,7 @@
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --header-line: #ececec;
   --border-line: #eeeeee;
+  --socials: #afb1b8;
 }
 
 body {
@@ -114,13 +115,11 @@ img {
   margin-left: auto;
 }
 
-.main-nav .item:not(:last-child),
-.main-contacts .item:not(:last-child) {
+.main-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.main-nav .link,
-.main-contacts .link {
+.main-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -150,12 +149,20 @@ img {
 }
 
 .header-contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: inherit;
+  display: inline-flex;
+  align-items: center;
 }
 
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent);
+}
+
+.main-contacts-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .logo {
@@ -295,6 +302,8 @@ img {
 
 .team-card {
   background-color: var(--primary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
 
@@ -315,13 +324,39 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .card-description {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.socials-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  color: var(--socials);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.socials-link:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.socials-icon {
+  fill: currentColor;
 }
 
 /* Footer section*/
